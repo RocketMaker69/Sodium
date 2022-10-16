@@ -1,0 +1,7 @@
+let i = 120
+let s = 0
+while i >= 0 {
+	s = s + i
+	i = i - 1
+}
+Println(s)

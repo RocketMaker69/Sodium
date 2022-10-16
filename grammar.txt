@@ -1,0 +1,27 @@
+program = statement*
+
+statement = "let" ident "=" assign
+					= "if" assign statement
+					= "while" assign statement
+					= "for" statement assign statement statement
+					= "foreach" ident "in" assign statement
+					= "function" ident "(" ident* ")" statement
+					= "class" ident "{"  "}"
+					= assign
+
+assign = ident "=" index
+			 = expr
+
+expr = term ("+"|"-" term)*
+
+term = atom ("*"|"/" atom)*
+
+atom = call ("**"|"%" call)*
+
+call = factor ("(" assign* ")")*
+
+factor = number
+			 = ident ("[" factor "]")?
+			 = string ("[" factor "]")?
+			 = "[" assign* "]"
+			 = "function" "(" ident* ")" statement

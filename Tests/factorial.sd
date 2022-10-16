@@ -1,0 +1,10 @@
+let f = 16
+let f0 = f
+let n = 1
+
+while f > 0 {
+	n = n * f
+	f = f - 1
+}
+
+Println(f0 "! = " n)

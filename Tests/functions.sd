@@ -1,0 +1,7 @@
+function gauss(n) {
+	return (n * (n + 1)) / 2
+}
+
+let n = 100 ** 77.5
+
+Println("gauss(" n ") = " gauss(n))

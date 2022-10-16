@@ -1,0 +1,6 @@
+let a = 5
+{
+	let a = a + 1
+	Println(a)
+}
+Println(a)

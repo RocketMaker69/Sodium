@@ -1,0 +1,5 @@
+{
+	let x = 5
+	Println(x)
+}
+Println(x)   # Error!
