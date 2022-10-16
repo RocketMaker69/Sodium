@@ -7,3 +7,6 @@ To run it, you need to download a Python 3.10.7 (or higher) interpreter.
 - 1.1: Added functions, conditionals, loops, lambdas and native functions
 - 1.2 (current): Added base structure for classes, more native functions, lists, foreach loops
 - 2.0 (not started): Add full support for classes, including inheritance (planned 12/2022 - 1/2023)
+# Examples
+Look at files in the Tests directory.
+
